@@ -1,0 +1,31 @@
+<div class="container-fluid bg-myowncolor">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 bg-notfication">
+                <h1>Fresh Recommendations</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <ul class="card col-3 ss1" *ngFor="let i of products">
+                        <li><img src="{{i.image}}" class="ss"></li>
+                        <li>Date:<span class="a2">{{i.Date}}</span></li>
+                        <li><span class="a"><a routerLink="contant" class="text-header" >{{i.name}}</a></span></li>
+                        <li><b class="a3"><a routerLink="/servies/laptops/{{i.id}}">Rs:<span class="a1">{{i.price}}</span></a></b></li>
+                        <li><a routerLink="tvs">whight:<span class="a2">{{i.wight}}</span></a></li>
+                        <li>{{i.distrit}}</li>
+                        <div class="row">
+                            <button class="btn-sm btn-primary  sa">message</button>
+                            <button  class="btn-sm btn-primary sa1">report</button>
+                        </div>
+              
+                    </ul>
+            </div>
+            
+        
+                   
+            </div>
+        </div>
+    </div>
+</div>
