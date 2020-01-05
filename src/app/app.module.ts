@@ -12,6 +12,7 @@ import { InboxComponent } from './pages/inbox/inbox.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { LogoutComponent } from './pages/logout/logout.component';
+import { ItempageComponent } from './pages/home/itempage/itempage.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LogoutComponent } from './pages/logout/logout.component';
     InboxComponent,
     RegisterComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    ItempageComponent
   ],
   imports: [
     BrowserModule,

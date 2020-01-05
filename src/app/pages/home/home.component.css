@@ -1,8 +1,9 @@
 .ss{
-    height: 175px;
+height: 175px;
 width: 211px;
-margin-top: 10px;
-border-radius: 23px;
+/* margin-top: 10px; */
+border-radius: 23px; 
+/* transform: translate(10px, 10px) */
 }
 .ss1{
     padding: 7px 7px 15px 13px;

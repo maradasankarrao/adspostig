@@ -6,10 +6,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { LogoutComponent } from './pages/logout/logout.component';
 import { MyadsComponent } from './pages/myads/myads.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ItempageComponent } from './pages/home/itempage/itempage.component';
 
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
+  {path:"",component:HomeComponent,children:[
+    {path:"itempage",component:ItempageComponent},
+    {path:"itempage/id",component:ItempageComponent},
+  ]},
   {path:"inbox",component:InboxComponent},
   {path:"login",component:LoginComponent},
   {path:"logout",component:LogoutComponent},

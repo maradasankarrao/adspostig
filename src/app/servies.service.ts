@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core'
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiesService {
 
-  constructor() { }
+  constructor(private laptopsins:ActivatedRoute) { }
   image1="assets/images/H-img/b-1_files/image.jpg"
   image2="assets/images/H-img/b-1_files/image-1.jpg"
   image3="assets/images/H-img/b-1_files/image-2.jpg"

@@ -9,17 +9,16 @@
             <div class="col-12">
                 <div class="row">
                     <ul class="card col-3 ss1" *ngFor="let i of products">
-                        <li><img src="{{i.image}}" class="ss"></li>
+                        <li><a ><img src="{{i.image}}" class="ss"  routerLink="home/iteampage"></a></li>
                         <li>Date:<span class="a2">{{i.Date}}</span></li>
-                        <li><span class="a"><a routerLink="contant" class="text-header" >{{i.name}}</a></span></li>
-                        <li><b class="a3"><a routerLink="/servies/laptops/{{i.id}}">Rs:<span class="a1">{{i.price}}</span></a></b></li>
-                        <li><a routerLink="tvs">whight:<span class="a2">{{i.wight}}</span></a></li>
-                        <li>{{i.distrit}}</li>
-                        <div class="row">
-                            <button class="btn-sm btn-primary  sa">message</button>
-                            <button  class="btn-sm btn-primary sa1">report</button>
+                        <li><span class="a"><a routerLink="" class="text-header" >{{i.name}}</a></span></li>
+                        <li><b class="a3">Rs:<span class="a1">{{i.price}}</span></b></li>
+                        <!-- <li><a routerLink="tvs">whight:<span class="a2">{{i.wight}}</span></a></li>
+                        <li>{{i.distrit}}</li> -->
+                        <div class="row justify-content-center">
+                            <button class="btn-sm btn-primary " >message</button>
+                            <button  class="btn-sm btn-danger ml-md-2">report</button>
                         </div>
-              
                     </ul>
             </div>
             
